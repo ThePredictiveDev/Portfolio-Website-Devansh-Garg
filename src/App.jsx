@@ -761,7 +761,7 @@ const ResearchSection = () => {
     <section className="py-20 px-6 max-w-7xl mx-auto">
       <FadeIn>
         <div className="flex items-center gap-4 mb-10">
-          <h2 className="text-2xl font-serif text-slate-100">Equity Research & Publications</h2>
+          <h2 className="text-2xl font-serif text-slate-100">Research Work & Publications</h2>
           <div className="h-px bg-slate-700 flex-1"></div>
         </div>
 
