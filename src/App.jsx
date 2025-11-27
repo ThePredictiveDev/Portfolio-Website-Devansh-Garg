@@ -503,10 +503,10 @@ const Hero = () => {
               <a href={`mailto:${DATA.profile.email}`} className="btn-primary">
                 Contact Me
               </a>
-              <a href={DATA.profile.linkedin} target="_blank" rel="noreferrer" className="btn-secondary">
+              <a href={DATA.profile.linkedin} target="_blank" rel="noopener noreferrer" className="btn-secondary">
                 LinkedIn
               </a>
-              <a href={DATA.profile.github} target="_blank" rel="noreferrer" className="btn-secondary">
+              <a href={DATA.profile.github} target="_blank" rel="noopener noreferrer" className="btn-secondary">
                 GitHub
               </a>
             </div>
@@ -770,7 +770,7 @@ const ResearchSection = () => {
             <a 
               href={paper.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               key={paper.id}
               className="group bg-slate-900 border border-slate-800 p-6 hover:border-gold-500/50 transition-all cursor-pointer hover:bg-slate-800/50 relative overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-2xl"
             >
@@ -828,7 +828,7 @@ const ProjectsSection = () => {
               <a 
                 href={project.link}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 key={project.id} 
                 className="bg-slate-900 border border-slate-800 p-4 md:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-slate-500 hover:shadow-lg transition-all cursor-pointer group hover:-translate-y-0.5"
               >
@@ -862,7 +862,7 @@ const ProjectsSection = () => {
             <a 
               href={DATA.profile.github}
               target="_blank"
-              rel="noreferrer" 
+              rel="noopener noreferrer" 
               className="inline-flex items-center gap-2 text-gold-500 hover:text-gold-400 font-mono text-sm border-b border-gold-500/50 pb-1 hover:border-gold-400 transition-colors"
             >
               VIEW MORE PROJECTS ON GITHUB <ExternalLink size={14} />
