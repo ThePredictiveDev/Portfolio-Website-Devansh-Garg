@@ -71,11 +71,26 @@
 	      "@type": "Organization",
 	      "name": "Devansh Garg Portfolio",
 	      "url": "https://devanshgarg.in",
-	      "logo": "https://devanshgarg.in/logo.png",
+	      "logo": {
+	        "@type": "ImageObject",
+	        "url": "https://devanshgarg.in/logo.png",
+	        "width": 512,
+	        "height": 512,
+	        "caption": "Devansh Garg"
+	      },
 	      "sameAs": [
 	        "https://www.linkedin.com/in/devansh-garg-92888a241",
 	        "https://github.com/ThePredictiveDev"
 	      ]
+	    },
+	    {
+	      "@type": "ImageObject",
+	      "url": "https://devanshgarg.in/logo.png",
+	      "name": "Devansh Garg Photo",
+	      "caption": "Devansh Garg - Finance and AI Engineer",
+	      "width": 512,
+	      "height": 512,
+	      "representativeOfPage": true
 	    }
 	  ]
 	}
@@ -84,6 +99,14 @@
     <link rel="stylesheet" crossorigin href="./assets/index-DHjnjbR-.css">
   </head>
   <body>
+    <!-- SEO: Accessible hidden image for Google thumbnail -->
+    <img 
+      src="./logo.png" 
+      alt="Devansh Garg - Finance and AI Engineer at IIT Mandi" 
+      width="112" 
+      height="112" 
+      style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;"
+    >
     <div id="root"></div>
   </body>
 </html>
