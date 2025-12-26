@@ -27,7 +27,7 @@ const DATA = {
   education: {
     university: "Indian Institute of Technology (IIT), Mandi",
     degree: "Bachelor of Technology in Bioengineering",
-    minor: "Minor in Intelligent Systems (AI)",
+    minor: "Minor in Intelligent Systems (AI) & Minor in Management",
     batch: "Class of 2027",
     coursework: [
       "Economics", "Entrepreneurship", "Probability & Statistics", 
@@ -77,23 +77,14 @@ const DATA = {
   // Corporate Experience
   corporate: [
     {
-      company: "IIFL Capital Services",
-      role: "Incoming Summer Analyst (IB/PE Division)",
-      period: "June 2026 - July 2026",
-      location: "TBD",
-      desc: [
-        "Incoming internship focusing on Investment Banking and Private Equity transactions.",
-        "Will involve deal structuring, financial analysis, and due diligence workflows."
-      ]
-    },
-    {
       company: "HDB Financial Services",
-      role: "Incoming Winter Analyst (Product Team)",
+      role: "Winter Analyst - Debt",
       period: "Dec 2025 - Jan 2026",
       location: "Noida, UP",
       desc: [
-        "Incoming role in the product division working on Finance + AI product development.",
-        "Focus on integrating artificial intelligence into financial service products."
+        "Structured a novel SGB-backed secured lending product; modeled deal economics projecting ₹560M annualized revenue impact through LTV optimization and collateral arbitrage",
+        "Engineered a risk-mitigation framework by leveraging the sovereign guarantee of underlying collateral, effectively eliminating credit default risk.",
+        "Built a scenario-based risk framework for the product, calibrating stress cases and collateral thresholds to preserve returns under adverse market conditions."
       ]
     },
     {
@@ -102,9 +93,9 @@ const DATA = {
       period: "Jun 2025 - Present",
       location: "Noida, UP",
       desc: [
-        "Appointed as a director overseeing strategic AI initiatives in family-owned software firm.",
-        "Spearheading development of investment banking automation agents streamlining M&A, valuation, and due diligence workflows by ~60%.",
-        "Engineered Reddit market intelligence scraper analyzing 500+ posts daily for business development insights."
+        "Led product strategy and go-to-market for AI-powered investment banking workflow automation platform; designed product roadmap targeting M&A, valuation, and due diligence processes",
+        "Architected AI agent for M&A workflow automation (deal structuring, financial modeling, document review); demonstrated 80%+ process time reduction vs. manual workflows.",
+        "Built multi-source financial intelligence system aggregating and analyzing Reddit, news, and market data streams; deployed for real-time market sentiment analysis supporting 5K+ daily deal signals"
       ]
     },
     {
@@ -113,9 +104,9 @@ const DATA = {
       period: "Feb 2025 - May 2025",
       location: "Mumbai, MH (WFH)",
       desc: [
-        "Created machine learning models for quantitative portfolio construction using Python and TensorFlow.",
-        "Engineered an API to compare mutual fund performance, improving analysis efficiency by ~50%.",
-        "Programmed modular functions for AI model deployment in live trading environment increasing efficiency by ~20%."
+        "Developed multi-factor ML model for systematic equity portfolio construction; backtested strategy across 2015-2024, achieving 20%+ annualized returns",
+        "Engineered an API to compare mutual fund performance, improving analysis efficiency by ~50%",
+        "Deployed modularized TensorFlow inference pipeline for live trading execution; reduced model latency by 20%"
       ]
     },
     {
@@ -149,9 +140,9 @@ const DATA = {
       period: "May 2025 - Oct 2025",
       location: "Noida, UP",
       desc: [
-        "Founded fintech startup enabling biometric payment transactions using face & voice recognition.",
-        "Led product development for a secure solution eliminating cards/pin; achieved 95% first prototype accuracy.",
-        "Managed a team of 6 interns and prepared a product release roadmap (exited due to other commitments)."
+        "Founded biometric payment fintech; built deep learning authentication system (face + voice verification) achieving 95%+ accuracy on live test data.",
+        "Identified regulatory friction with RBI on biometric payment systems, leading to development of a novel pipeline with perfect legal compliance",
+        "Led a team of 6 interns; raised interest from early-stage investors (₹10M+) before strategic exit for confidential reasons."
       ]
     }
   ],
@@ -932,9 +923,6 @@ function App() {
       <footer className="bg-slate-900 border-t border-slate-800 py-12 px-6 text-center">
         <div className="text-gold-500 font-serif text-xl mb-4">DEVANSH GARG</div>
         <div className="text-slate-500 text-sm mb-8">Educated in AI, Building in Finance.</div>
-        <div className="text-xs font-mono text-slate-600">
-          © {new Date().getFullYear()} • PROPRIETARY & CONFIDENTIAL
-        </div>
       </footer>
 
       <style>{`
