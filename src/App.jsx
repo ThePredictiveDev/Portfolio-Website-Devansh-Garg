@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-  TrendingUp, BookOpen, Briefcase, Code, FileText, ExternalLink, 
-  X, ChevronRight, ChevronDown, Clock, Globe, Award, Cpu, 
+import {
+  TrendingUp, BookOpen, Briefcase, Code, FileText, ExternalLink,
+  X, ChevronRight, ChevronDown, Clock, Globe, Award, Cpu,
   DollarSign, BarChart3, GraduationCap, Users, Zap, Layers, Download
 } from 'lucide-react';
 
@@ -14,14 +14,14 @@ const DATA = {
   profile: {
     name: "Devansh Garg",
     role: "Pre-final Year B.Tech @ IIT Mandi | Finance & AI",
-    tagline: "Educated in AI, Building in Finance",
+    tagline: "Investment Banking Professional",
     email: "devanshg.iitm@gmail.com",
     phone: "+91-9910329901",
     linkedin: "https://www.linkedin.com/in/devansh-garg-92888a241",
     github: "https://github.com/ThePredictiveDev",
     resumeLink: "/resume.pdf", // Placeholder for actual resume file
     location: "Noida, UP / Mandi, HP",
-    about: "My journey began with a curiosity for how complex systems behave, and over time that curiosity has grown into a blend of finance, AI, and problem-solving. I enjoy exploring how intelligent models, thoughtful analysis, and careful reasoning can shape real outcomes. I am actively pursuing internships in investment banking and private equity, focusing on M&A, LBOs, and deal analysis. My long-term aim is to build a private equity firm guided by social and cultural ESG principles."
+    about: "I am an investment banking professional with a rigorous quantitative foundation and active front-office transaction experience. Currently a Venture Capital Summer Analyst at Iron Pillar, I focus on market mapping and thematic research. This fall, I will join RMB Capital as an Investment Banking Analyst to execute M&A advisory and private equity syndication transactions. My objective is to drive strategic value and build a high-impact career in investment banking."
   },
 
   education: {
@@ -30,16 +30,16 @@ const DATA = {
     minor: "Minor in Intelligent Systems (AI) & Minor in Management",
     batch: "Class of 2027",
     coursework: [
-      "Economics", "Entrepreneurship", "Probability & Statistics", 
-      "Deep Learning", "Advanced DL", "Computational Methods in Pricing", 
+      "Economics", "Entrepreneurship", "Probability & Statistics",
+      "Deep Learning", "Advanced DL", "Computational Methods in Pricing",
       "Trading Algorithms", "M&A Valuation", "Market Risk Management"
     ]
   },
-  
+
   ticker: [
-    { symbol: "CFA", value: "Lvl-1 Feb '26", change: "Prep" },
+    { symbol: "CFA", value: "Level 1", change: "Cleared" },
     { symbol: "IITM", value: "B.Tech '27", change: "Bio/AI" },
-    { symbol: "EXP", value: "IB/PE Incoming", change: "IIFL/HDB" },
+    { symbol: "EXP", value: "IB/VC Incoming", change: "Iron Pillar/RMB" },
     { symbol: "TECH", value: "Deep Learning", change: "Adv" },
     { symbol: "LANG", value: "Python/R/SQL", change: "Native" },
     { symbol: "VENTURE", value: "BioPay/Itivrit", change: "Founder" },
@@ -48,34 +48,54 @@ const DATA = {
 
   skills: {
     finance: [
-      "Financial Modeling (DCF, LBO, Comps)", 
-      "Valuation (Relative & Intrinsic)", 
-      "M&A Deal Structuring", 
-      "Financial Statement Analysis", 
-      "Due Diligence", 
+      "Financial Modeling (DCF, LBO, Comps)",
+      "Valuation (Relative & Intrinsic)",
+      "M&A Deal Structuring",
+      "Financial Statement Analysis",
+      "Due Diligence",
       "Portfolio Management",
       "Risk Analysis"
     ],
     technical: [
-      "Python (Pandas, NumPy)", 
-      "R / SQL", 
-      "Excel (Advanced Modeling)", 
-      "TensorFlow / PyTorch", 
-      "Data Visualization", 
-      "FastAPI", 
+      "Python (Pandas, NumPy)",
+      "R / SQL",
+      "Excel (Advanced Modeling)",
+      "TensorFlow / PyTorch",
+      "Data Visualization",
+      "FastAPI",
       "Statistical Analysis"
     ],
     leadership: [
-      "Deal Execution", 
-      "Client Management", 
-      "Strategic Planning", 
-      "Team Leadership", 
+      "Deal Execution",
+      "Client Management",
+      "Strategic Planning",
+      "Team Leadership",
       "Negotiation"
     ]
   },
 
   // Corporate Experience
   corporate: [
+    {
+      company: "RMB Capital (Rand Merchant Bank)",
+      role: "Incoming Investment Banking Fall Analyst",
+      period: "Aug 2026 - Dec 2026",
+      location: "Mumbai, MH",
+      desc: [
+        "Assisting in the execution of M&A advisory and private equity syndication transactions within the Investment banking group.",
+        "Supporting deal origination, financial modeling, and the preparation of pitchbooks and confidential information memorandums (CIMs)."
+      ]
+    },
+    {
+      company: "Iron Pillar",
+      role: "Venture Capital Summer Analyst",
+      period: "Jun 2026 - Present",
+      location: "Bengaluru, KA",
+      desc: [
+        "Assisting the investment team with deal sourcing, market mapping, and deep-dive thematic research within the technology ecosystem.",
+        "Supporting due diligence processes, financial analysis, and the evaluation of high-growth startup investment opportunities."
+      ]
+    },
     {
       company: "HDB Financial Services",
       role: "Winter Analyst - Debt",
@@ -226,10 +246,10 @@ const DATA = {
 
   certifications: {
     featured: {
-      title: "CFA Level 1 Candidate",
+      title: "CFA Level 1 (Passed)",
       issuer: "CFA Institute",
-      date: "Appearing Feb 2026",
-      desc: "Comprehensive preparation in Ethical Standards, Quant Methods, Economics, and Financial Reporting."
+      date: "Cleared Feb 2026",
+      desc: "Mastered Financial Statement Analysis (FSA), Corporate Issuers (Capital Structure, M&A), Equity Valuation, and Quantitative Methods."
     },
     list: [
       { title: "Strategic Leadership & Management", issuer: "Gies College of Business (UIUC)", date: "Nov 2025" },
@@ -251,13 +271,23 @@ const DATA = {
 
   research: [
     {
+      id: "r6",
+      title: "FinChart-Multimodal",
+      subtitle: "Dataset for Context-Injected Financial Chart Understanding",
+      status: "Accepted",
+      venue: "CVPR Findings",
+      summary: "A large-scale dataset aligning OHLCV time series with chart images to enable multimodal financial analysis.",
+      link: "https://drive.google.com/file/d/12-LB6tu27Tqi2dNg4OjJA0qQ8-R1BC6D/view?usp=sharing",
+      tags: ["Computer Vision", "Finance", "Multimodal AI"]
+    },
+    {
       id: "r1",
       title: "Strongly Connected Components Are All You Need",
       subtitle: "Graph-Theoretic Interpretability for Vision Transformers",
       status: "Accepted",
       venue: "ICVGIP'25 (ACM ICPS)",
       summary: "A novel graph-theoretic framework analyzing attention mechanisms in Vision Transformers, proving that meaningful SCCs correspond to semantic visual features.",
-      link: "https://doi.org/10.21203/rs.3.rs-7877883/v1", 
+      link: "https://doi.org/10.21203/rs.3.rs-7877883/v1",
       tags: ["Computer Vision", "Graph Theory", "Transformers"]
     },
     {
@@ -299,16 +329,6 @@ const DATA = {
       summary: "Agent-based simulation of democratic decision-making comparing six voting mechanisms on welfare and fairness.",
       link: "https://doi.org/10.31235/osf.io/mp9kh_v1",
       tags: ["Game Theory", "Social Choice", "ABM"]
-    },
-    {
-      id: "r6",
-      title: "FinChart-Multimodal",
-      subtitle: "Dataset for Context-Injected Financial Chart Understanding",
-      status: "Submitted",
-      venue: "CVPR",
-      summary: "A large-scale dataset aligning OHLCV time series with chart images to enable multimodal financial analysis.",
-      link: "https://drive.google.com/file/d/12-LB6tu27Tqi2dNg4OjJA0qQ8-R1BC6D/view?usp=sharing",
-      tags: ["Computer Vision", "Finance", "Multimodal AI"]
     }
   ],
 
@@ -353,23 +373,6 @@ const DATA = {
       tech: ["Python", "Pandas", "Excel API"],
       link: "https://github.com/ThePredictiveDev/DCF-Automator-Program"
     }
-  ],
-
-  caseStudies: [
-    {
-      id: "cs1",
-      title: "Tech Sector LBO Model",
-      type: "LBO Analysis",
-      status: "Coming Soon",
-      desc: "A comprehensive leveraged buyout model for a mid-cap SaaS company, including debt schedules and sensitivity analysis."
-    },
-    {
-      id: "cs2",
-      title: "Cross-Border M&A",
-      type: "Transaction Analysis",
-      status: "Coming Soon",
-      desc: "Strategic rationale and valuation synergy analysis for a hypothetical merger in the renewable energy sector."
-    }
   ]
 };
 
@@ -398,9 +401,8 @@ const FadeIn = ({ children, delay = 0 }) => {
   return (
     <div
       ref={domRef}
-      className={`transition-all duration-700 ease-out transform ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
+      className={`transition-all duration-700 ease-out transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {children}
@@ -474,7 +476,7 @@ const Hero = () => {
               {DATA.profile.tagline}
             </p>
           </FadeIn>
-          
+
           <FadeIn delay={200}>
             {/* Education Highlight */}
             <div className="bg-slate-800/30 border-l-2 border-gold-500 pl-4 py-2 my-6 hover:bg-slate-800/50 transition-colors">
@@ -600,10 +602,10 @@ const CertificationsSection = () => {
             </div>
           ))}
         </div>
-        
+
         <div className="mt-6 text-center">
-          <button 
-            onClick={() => setShowAll(!showAll)} 
+          <button
+            onClick={() => setShowAll(!showAll)}
             className="text-gold-500 text-sm hover:text-gold-400 flex items-center gap-1 mx-auto transition-colors"
           >
             {showAll ? "Show Less" : "View All Certifications"} <ChevronDown size={14} className={`transform transition-transform ${showAll ? 'rotate-180' : ''}`} />
@@ -619,10 +621,10 @@ const ExperienceSection = () => {
   const [showPast, setShowPast] = useState(false);
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto">
+    <section id="experience" className="py-20 px-6 max-w-7xl mx-auto">
       <FadeIn>
         <div className="flex items-center gap-4 mb-12">
-          <h2 className="text-2xl font-serif text-slate-100">Professional Experience</h2>
+          <h2 className="text-2xl font-serif text-slate-100">Corporate Finance & Investment Banking Experience</h2>
           <div className="h-px bg-slate-700 flex-1"></div>
         </div>
 
@@ -684,7 +686,7 @@ const ExperienceSection = () => {
 
         {/* Past Experience Dropdown */}
         <div className="mt-12 border-t border-slate-800 pt-8">
-          <button 
+          <button
             onClick={() => setShowPast(!showPast)}
             className="w-full flex items-center justify-between bg-slate-900 p-4 border border-slate-800 hover:border-slate-600 transition-colors text-left rounded group"
           >
@@ -693,7 +695,7 @@ const ExperienceSection = () => {
             </span>
             <ChevronDown size={16} className={`text-slate-500 transform transition-transform ${showPast ? 'rotate-180' : ''}`} />
           </button>
-          
+
           {showPast && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 animate-in fade-in slide-in-from-top-2">
               {DATA.pastExperience.map((exp, idx) => (
@@ -721,7 +723,7 @@ const ExperienceSection = () => {
 // 6. Leadership Section
 const LeadershipSection = () => {
   return (
-    <section className="py-16 px-6 max-w-7xl mx-auto bg-slate-900/20 border-y border-slate-800">
+    <section id="leadership" className="py-16 px-6 max-w-7xl mx-auto bg-slate-900/20 border-y border-slate-800">
       <FadeIn>
         <div className="flex items-center gap-4 mb-10">
           <h2 className="text-2xl font-serif text-slate-100">Leadership & Initiatives</h2>
@@ -749,16 +751,19 @@ const LeadershipSection = () => {
 // 7. Research Section
 const ResearchSection = () => {
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto">
+    <section id="research" className="py-20 px-6 max-w-7xl mx-auto">
       <FadeIn>
-        <div className="flex items-center gap-4 mb-10">
-          <h2 className="text-2xl font-serif text-slate-100">Research Work & Publications</h2>
-          <div className="h-px bg-slate-700 flex-1"></div>
+        <div className="flex flex-col mb-10">
+          <div className="flex items-center gap-4">
+            <h2 className="text-2xl font-serif text-slate-100">Research & Publications in Finance, Markets, and AI</h2>
+            <div className="h-px bg-slate-700 flex-1"></div>
+          </div>
+          <p className="text-sm text-slate-400 mt-2 italic">*All listed publications are solo-authored research.</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {DATA.research.map((paper) => (
-            <a 
+            <a
               href={paper.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -766,13 +771,12 @@ const ResearchSection = () => {
               className="group bg-slate-900 border border-slate-800 p-6 hover:border-gold-500/50 transition-all cursor-pointer hover:bg-slate-800/50 relative overflow-hidden flex flex-col hover:-translate-y-1 hover:shadow-2xl"
             >
               <div className="absolute top-0 right-0 w-16 h-16 bg-gold-500/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-150"></div>
-              
+
               <div className="flex justify-between items-start mb-4">
-                <span className={`text-xs font-mono px-2 py-1 rounded ${
-                  paper.status === 'Accepted' ? 'bg-green-900/30 text-green-400' :
+                <span className={`text-xs font-mono px-2 py-1 rounded ${paper.status === 'Accepted' ? 'bg-green-900/30 text-green-400' :
                   paper.status === 'Submitted' ? 'bg-blue-900/30 text-blue-400' :
-                  'bg-slate-800 text-slate-400'
-                }`}>
+                    'bg-slate-800 text-slate-400'
+                  }`}>
                   {paper.status}
                 </span>
                 <ExternalLink size={14} className="text-slate-600 group-hover:text-gold-500 transition-colors" />
@@ -806,33 +810,33 @@ const ResearchSection = () => {
 // 8. Projects Section
 const ProjectsSection = () => {
   return (
-    <section className="py-20 bg-slate-900/30 border-y border-slate-800">
+    <section id="projects" className="py-20 bg-slate-900/30 border-y border-slate-800">
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
           <div className="flex items-center justify-between mb-10">
-            <h2 className="text-2xl font-serif text-slate-100">Proprietary Projects</h2>
+            <h2 className="text-2xl font-serif text-slate-100">Proprietary Trading & Valuation Projects</h2>
             <div className="text-xs font-mono text-slate-500">INDEX: TECH_FIN</div>
           </div>
 
           <div className="grid gap-4">
             {DATA.projects.map((project) => (
-              <a 
+              <a
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                key={project.id} 
+                key={project.id}
                 className="bg-slate-900 border border-slate-800 p-4 md:p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-slate-500 hover:shadow-lg transition-all cursor-pointer group hover:-translate-y-0.5"
               >
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-1">
                     <div className="w-2 h-2 bg-gold-500 rounded-full group-hover:animate-pulse"></div>
                     <h3 className="text-lg font-semibold text-slate-200 group-hover:text-white flex items-center gap-2">
-                      {project.title} <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity text-gold-500"/>
+                      {project.title} <ExternalLink size={12} className="opacity-0 group-hover:opacity-100 transition-opacity text-gold-500" />
                     </h3>
                   </div>
                   <p className="text-sm text-slate-400 max-w-2xl">{project.desc}</p>
                 </div>
-                
+
                 <div className="flex items-center gap-6 w-full md:w-auto justify-between md:justify-end">
                   <div className="text-right">
                     <div className="text-xs font-mono text-slate-500 uppercase">Key Metric</div>
@@ -850,52 +854,14 @@ const ProjectsSection = () => {
           </div>
 
           <div className="mt-8 text-center">
-            <a 
+            <a
               href={DATA.profile.github}
               target="_blank"
-              rel="noopener noreferrer" 
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-gold-500 hover:text-gold-400 font-mono text-sm border-b border-gold-500/50 pb-1 hover:border-gold-400 transition-colors"
             >
               VIEW MORE PROJECTS ON GITHUB <ExternalLink size={14} />
             </a>
-          </div>
-        </FadeIn>
-      </div>
-    </section>
-  );
-};
-
-// 9. Case Studies
-const CaseStudiesSection = () => {
-  return (
-    <section className="py-20 bg-slate-950">
-      <div className="max-w-7xl mx-auto px-6">
-        <FadeIn>
-          <div className="flex items-center justify-between mb-10">
-            <h2 className="text-2xl font-serif text-slate-100">Deal Flow / Case Studies</h2>
-            <span className="px-2 py-1 bg-slate-900 text-slate-500 text-xs font-mono border border-slate-800">
-              RESTRICTED ACCESS
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {DATA.caseStudies.map((cs) => (
-              <div key={cs.id} className="relative border border-slate-800 bg-slate-900/20 p-8 rounded border-dashed">
-                <div className="absolute inset-0 backdrop-blur-[1px] bg-slate-950/50 flex items-center justify-center z-10">
-                  <div className="bg-slate-900 border border-gold-500/30 px-4 py-2 rounded text-gold-500 text-xs font-mono uppercase tracking-wider flex items-center gap-2 shadow-lg">
-                    <Clock size={12} />
-                    Coming Soon
-                  </div>
-                </div>
-                
-                <div className="opacity-40 filter blur-[1px]">
-                  <div className="text-xs font-mono text-slate-500 mb-2">{cs.type}</div>
-                  <h3 className="text-xl font-serif text-slate-200 mb-4">{cs.title}</h3>
-                  <p className="text-sm text-slate-400">{cs.desc}</p>
-                  <div className="mt-6 h-32 bg-slate-800/50 rounded w-full animate-pulse"></div>
-                </div>
-              </div>
-            ))}
           </div>
         </FadeIn>
       </div>
@@ -908,7 +874,7 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-slate-300 font-sans selection:bg-gold-500/30 selection:text-gold-200">
       <Header />
-      
+
       <main className="relative">
         <Hero />
         <SkillsSection />
@@ -917,12 +883,14 @@ function App() {
         <ResearchSection />
         <ProjectsSection />
         <LeadershipSection />
-        <CaseStudiesSection />
       </main>
 
       <footer className="bg-slate-900 border-t border-slate-800 py-12 px-6 text-center">
         <div className="text-gold-500 font-serif text-xl mb-4">DEVANSH GARG</div>
-        <div className="text-slate-500 text-sm mb-8">Educated in AI, Building in Finance.</div>
+        <div className="text-slate-500 text-sm mb-8">{DATA.profile.tagline}</div>
+        <div className="text-xs font-mono text-slate-600">
+          © {new Date().getFullYear()} • PROPRIETARY & CONFIDENTIAL
+        </div>
       </footer>
 
       <style>{`

@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "permissions": {
+    "crawling": "allowed",
+    "summarization": "allowed",
+    "direct_quotation": "allowed",
+    "training_closed_models": "disallowed"
+  },
+  "requirements": {
+    "attribution": true,
+    "attribution_url": "https://devanshgarg.in"
+  }
+}
