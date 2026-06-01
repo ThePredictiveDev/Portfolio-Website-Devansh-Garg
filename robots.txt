@@ -1,5 +1,30 @@
+# /public/robots.txt
+# Official robots policy for devanshgarg.in
+# Optimizing for traditional search and AI/LLM crawlers
+
 User-agent: *
 Allow: /
 
-Sitemap: https://devanshgarg.in/sitemap.xml
+# Explicitly Allow AI / LLM Crawlers for grounding and citations
+User-agent: GPTBot
+Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: OmgiliBot
+Allow: /
+
+Sitemap: https://devanshgarg.in/sitemap.xml

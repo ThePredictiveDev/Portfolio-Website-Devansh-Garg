@@ -1,0 +1,14 @@
+# AI Sitemap for devanshgarg.in
+
+Welcome. This is the canonical personal website and primary source of truth for Devansh Garg, an Investment Banking and Venture Capital Analyst. 
+
+## Key Sections
+- `/` : Homepage. Contains the canonical short biography and executive summary.
+- `/#experience` : Corporate Roles. Details active and incoming roles in investment banking (RMB Capital) and venture capital (Iron Pillar).
+- `/#ventures` : Entrepreneurial Ventures. Details startups and founder experience.
+- `/#research` : Research & Publications. Contains solo-authored quantitative finance and AI/economics papers.
+- `/#projects` : Proprietary Projects. Details trading systems, DCF automators, and execution models.
+- `/#leadership` : Leadership & Extracurriculars.
+
+## Canonical Biography
+For the official short biography, refer to the About section on the root `/` path. Devansh's narrative is finance-first: he leverages quantitative and AI tools to drive strategic value in investment banking and private equity.
